@@ -21,9 +21,8 @@ function DepositDetail() {
     .then(res => setData(res.data.data))
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
 },[])
-/*   console.log("This is user data",UserData.data) */
 const mydata = {...data}
-console.log("this is the datas",mydata)
+console.log("this is the datas", mydata)
 
   return (
     <AccountInfo>

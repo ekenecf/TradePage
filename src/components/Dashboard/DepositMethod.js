@@ -27,7 +27,6 @@ function DepositMethod() {
 const mydata = {...data}
 console.log("this is the datas",mydata)
 
-/*   console.log("This is user data",UserData.data) */
   return (
     <DepositMethodContainer>
       <DepositMethodHeading>Select A Deposit Method</DepositMethodHeading>

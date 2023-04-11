@@ -13,8 +13,6 @@ import Axios from "axios"
 import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
 
-/* import ForexCrossRates from './ForexCrossRates'
-import Advanced from './Advanced' */
 
 function AccountDetail() {
   const { userid } = useParams();
