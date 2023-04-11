@@ -9,7 +9,7 @@ import Login from './components/Login';
 import ForgotPassword from './components/ForgotPassword';
 import RestPassword from './components/RestPassword';
 import Dashboard from './components/Dashboard/Dashboard';
-import Private from './components/Private';
+// import Private from './components/Private';
 import EditProfile from './components/Dashboard/EditProfile';
 import AboutCompany from './components/Dashboard/AboutCompany';
 import Deposit from './components/Dashboard/Deposit';

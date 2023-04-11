@@ -9,23 +9,23 @@ function Question() {
     {
       id: uuidv4(),
       question: 
-      "Q: What is the main idea behind the establishment of Preeminentcryptotrade.com? Is the company for ‘real’? And is there anything that really proves this?",
+      "Q: What is the main idea behind the establishment of ELITE-GAIN? Is the company for ‘real’? And is there anything that really proves this?",
       answer:
-      "A: Preeminentcryptotrade.com is a cryptocurrency trading company established in 2022. The wide array of services we offer were specifically designed to assist Bitcoin holders in making good trading decisions. We are a London-based company that possesses a group of trading professionals covering many industries, ranging from engineering to advanced computer technology. Our group of professionals are widely versed in cryptocurrency techniques as well and can expertly answer any question you might have concerning cryptocurrency trading.",
+      "A: ELITE-GAIN is a financial market trading company established in 2022. The wide array of services we offer were specifically designed to assist Bitcoin holders in making good trading decisions. We are a London-based company that possesses a group of trading professionals covering many industries, ranging from engineering to advanced computer technology. Our group of professionals are widely versed in cryptocurrency techniques as well and can expertly answer any question you might have concerning financial market trading.",
       open: true,
     },
     {
       id: uuidv4(),
       question: "Q: You seem to provide a quite lucrative interest rate for a limited period of time. Where is the funds coming from?",
       answer:
-        "A: As a result of the volume of cryptocurrency trading and our cutting-edge trading technology, we have the ability to provide an interest rate that’s higher than what’s usually obtainable in the average market. Moreover, the fact that we are always spreading our reach as far as we can globally helps us in reaching new heights. Plus, we have to stick only to concepts that have to do with modern-day infrastructure if we want to maintain our status as one of the best cryptocurrency trading platforms.",
+        "A: As a result of the volume of cryptocurrency trading, stocks, and our cutting-edge trading technology, we have the ability to provide an interest rate that’s higher than what’s usually obtainable in the average market. Moreover, the fact that we are always spreading our reach as far as we can globally helps us in reaching new heights. Plus, we have to stick only to concepts that have to do with modern-day infrastructure if we want to maintain our status as one of the best trading platforms.",
       open: false,
     },
     {
       id: uuidv4(),
       question: "Q: Are there risks involved?",
       answer:
-        "A: You already made a good decision by deciding to join our community. Preeminentcryptotrade.com is a completely risk-free trading company, all thanks to our overall ideology and company concept. In addition, our company is made up of certified professionals in various fields such as cryptocurrency trading, blockchain technology, cryptocurrency finance and security. Our goal is to provide a seamless trading experience based on expert project management. We aim to make cryptocurrency trading available to anybody that has no experience within the field.",
+        "A: You already made a good decision by deciding to join our community. ELITE-GAIN is a completely risk-free trading company, all thanks to our overall ideology and company concept. In addition, our company is made up of certified professionals in various fields such as cryptocurrency trading, blockchain technology, stocks and security. Our goal is to provide a seamless trading experience based on expert project management. We aim to make financial trading available to anybody that has no experience within the field.",
       open: false,
     },
   ];

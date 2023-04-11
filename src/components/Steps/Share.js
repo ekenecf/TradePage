@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Share.css";
 import { BsArrowRight } from "react-icons/bs";
 import picture from "../../assets/cb-263-512.svg";
@@ -20,21 +21,28 @@ const Share = () => {
 
             <p className="parag">
               The affiliate program was created to reward members, who share our
-              cryptocurrency trading platform with their friends and colleagues.
+              trading platform with their friends and colleagues.
               When you refer other people to our trading platform, you earn up
               to 8% from their direct account fundings. The affiliate program is
               for everybody; you don’t need to have an active account to be able
               to participate.
             </p>
-
             <br />
             <br />
 
             <div className="button-link">
-              <a href="/siginup" className="button1">
+              <NavLink
+                to={"/siginup"}
+                style={{
+                  width: "20%",
+                  textAlign: "center",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
+              >
                 <BsArrowRight className="arrow" />
-                REGISTER NOW
-              </a>
+                SIGN Up
+              </NavLink>
             </div>
           </div>
         </div>

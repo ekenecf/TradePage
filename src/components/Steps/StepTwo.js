@@ -11,7 +11,7 @@ const StepTwo = () => {
       <div className="step_two">
         <h5 className="step_two_h5">STEP BY STEP</h5>
         <h2 className="systematic_parag">
-          Systematic guide on how to start profiting with Preeminentcryptotrade.com
+          Systematic guide on how to start profiting with ELITE-GAIN
         </h2>
         <hr className="step_two_hr" />
       </div>
@@ -36,7 +36,7 @@ const StepTwo = () => {
             You have two great earning options: you can become a regional or
             worldwide representative, which enables you to take part in our
             lucrative affiliate program, OR you can participate in our
-            cryptocurrency trading services to secure a stable, daily income. If
+            trading services to secure a stable, daily income. If
             you can’t decide, fear not—you can activate both earning options
             simultaneously.
           </p>
@@ -57,10 +57,10 @@ const StepTwo = () => {
           <hr className="step_two_hr" />
 
           <p className="explore_parag">
-            Fund your personal account with Bitcoin and activate hybrid
-            automated cryptocurrency trading. You will receive fixed interest of
+            Fund your personal account with Bitcoin or FX and activate hybrid
+            automated trading. You will receive fixed interest of
             10% for 15 consecutive days. 150% total return. Principal included.
-            Start with as little as 0.001 BTC.
+            Start with as little as 0.001 BTC or its dollar($) equivalent.
           </p>
         </div>
 
@@ -78,10 +78,10 @@ const StepTwo = () => {
           <hr className="step_two_hr" />
 
           <p className="explore_parag">
-            Making withdrawals is very fast and easy. Preeminentcryptotrade.com® offers
+            Making withdrawals is very fast and easy. ELITE-GAIN® offers
             instant withdrawals for all requested withdrawals. You don’t have to
             wait endless days for your withdrawal requests to be processed. All
-            your withdrawals are made available to your Bitcoin address in real
+            your withdrawals are made available to your Bitcoin address or other ways you deem fit in real
             time once you request them.
           </p>
         </div>

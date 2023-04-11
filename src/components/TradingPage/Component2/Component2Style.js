@@ -54,10 +54,10 @@ background-color: #54D8A3;
 margin-bottom: 60px;
 
 `;
-export const BackgroundText = styled.div`
-font-family: 'Montserrat',sans-serif;
+export const BackgroundText = styled.p`
+/* font-family: 'Montserrat',sans-serif; */
 font-weight: 300;
-font-size: 100px;
+font-size: 45px;
 color: #1035ac;
 position: absolute;
 opacity:  20%;
@@ -65,16 +65,16 @@ opacity:  20%;
 bottom: -300px;
 
 @media Screen and (max-width: 768px){
-    bottom: -600px;
-    font-size: 80px;
+    bottom: -596px;
+    font-size: 40px;
 }
 @media Screen and (max-width: 375px){
-    bottom: -680px;
-    font-size: 68px;
+    bottom: -596px;
+    font-size: 38px;
 }
 @media Screen and (max-width: 320px){
-    bottom: -720px;
-    font-size: 60px;
+    bottom: -596px;
+    font-size: 40px;
 }
 `;
 export const Div = styled.div`
@@ -88,13 +88,12 @@ align-items: center;
 margin-top: 100px;
 
 @media Screen and (max-width: 768px){
-    margin-top: 30px;
+    margin-top: 0px;
 }
 `;
 
 export const FirstWrap = styled.div`
-@media Screen and (max-width: 320px){
-}
+
 `;
 export const CircleHold = styled.div`
 width: 90%;
@@ -111,6 +110,10 @@ left: 50%;
 border: 1px solid #7d5ea3;
 border-radius: 50%;
 background-color: white;
+@media Screen and (max-width: 768px){
+  margin: 459px 0 0 -609px; 
+}
+
 `;
 export const Circle2 = styled.div`
     margin: 306px 0 0 -306px;
@@ -146,6 +149,11 @@ left: 50%;
 border: 1px solid #7d5ea3;
 border-radius: 50%;
 /* background-color: red; */
+@media Screen and (max-width: 768px){
+    /* width: 90%; */
+margin: -143px 0 0 -143px;
+
+}
 `;
 export const CalculatorDiv = styled.div`
 width: 75%;
@@ -164,6 +172,7 @@ align-items: center;
 
 @media Screen and (max-width: 768px){
     width: 90%;
+    margin-top: 30%;
 }
 @media Screen and (max-width: 425px){
     width: 95%;

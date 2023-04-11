@@ -5,7 +5,8 @@ import pic from '../../../asset/pic.png'
 
 export const Container = styled.div`
 position: absolute;
-display: block;
+/* display: block; */
+display: flex;
 background-image: url(${btbg});
 background-repeat: no-repeat;
 background-size: cover;
@@ -14,8 +15,6 @@ width: 100%;
 height: max-content;
 top: 0;
 left: 0;
-/* opacity: 95%; */
-display: flex;
 justify-content: center;
 align-items: center;
 

@@ -33,8 +33,6 @@ const Faq = (faqs) => {
             </button>
           )}
         </div>
-        {/* {(+showAns2 === faq.id) ? <p className="faq_answer">{faq.answer} </p> : null} */}
-        {/* {showAns && (+showAns2 === faq.id) ? (console.log(faq.answer)) : null} */}
         <br />
         <div className="ans_arr">
           <p>{showAns && showAns2 === faq.id ? faq.answer : null}</p>

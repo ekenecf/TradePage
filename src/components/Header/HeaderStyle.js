@@ -38,7 +38,6 @@ export const Container = styled.div`
   }
   @media Screen and (max-width: 425px) {
     width: 100%;
-    /* background-color: red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,14 +49,11 @@ export const Container = styled.div`
 export const Container2 = styled.div`
   width: 100vw;
   background-color: #1035ac;
-  /* height: 150px; */
-  /* min-height: 49px; */
   position: fixed;
   left: 0;
   top: 0;
   z-index: 999990;
   overflow-x: hidden;
-  /* padding: 10px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,10 +119,12 @@ export const Wrapper = styled.div`
 export const Wrapper2 = styled.div`
   width: 90%;
   height: 60px;
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  /* margin-top: 10px; */
 
   @media Screen and (max-width: 768px) {
     width: 90%;

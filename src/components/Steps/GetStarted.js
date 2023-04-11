@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import picture from "../../assets/cb-258-512.svg";
 import Share from "./Share";
 import StepTwo from "./StepTwo";
-import Footer from "../LandingPage/Footer/Footer";
+import Footer from "../LandingPage/Footer/Footer"
 
 const GetStarted = () => {
   return (
@@ -24,27 +24,28 @@ const GetStarted = () => {
             </div>
 
             <p className="paragraph">
-              It’s fast, easy, and free – with no membership fees whatsoever! It
-              only takes a few minutes. To open your free account, go to the
-              registration page and click the “Create Account” button on the
-              top-right-hand side of the website. A form will pops up for you to
-              enter your personal information in; as soon as you have done that,
-              enter your full name, username, password, email and payment
-              accounts and you’re good to go.
+              It’s fast, easy, and free – with no membership
+              fees whatsoever! It only takes a few minutes. To
+              open your free account, go to the registration page and
+              click the “Create Account” button on the top-right-hand side of
+              the website. A form will pops up for you to enter your personal
+              information in; as soon as you have done that, enter your full
+              name, username, password, email and payment accounts and you’re
+              good to go.
             </p>
             <br />
             <br />
 
             <div className="button-link">
+              {/* <a href="/siginup" className="button1">
+                <BsArrowRight className="arrow" />
+                CREATE ACCOUNT
+              </a> */}
               <NavLink
                 to={"/siginup"}
-                style={{
-                  width: "20%",
-                  textAlign: "center",
-                  color: "#fff",
-                  textDecoration: "none",
-                }}
+                style={{width:"20%", textAlign:"center", color: "#fff", textDecoration: "none" }}
               >
+                <BsArrowRight className="arrow" />
                 SIGN Up
               </NavLink>
             </div>
@@ -59,7 +60,7 @@ const GetStarted = () => {
       <StepTwo />
       <Share />
 
-      <Footer />
+      <Footer/>
     </div>
   );
 };
