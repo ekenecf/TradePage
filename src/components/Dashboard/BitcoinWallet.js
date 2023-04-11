@@ -98,7 +98,6 @@ const WalletDetails = styled.div`
     p {
       margin: 0 0 4% 2%;
     }
-
   }
 `;
 

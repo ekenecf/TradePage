@@ -1,5 +1,4 @@
 import React from "react"
-// import { useLocation } from 'react-router-dom'
 import TopHeader from './TopHeader'
 import HeaderMenu from "./HeaderMenu"
 import BitconScr from "./BitconScr"

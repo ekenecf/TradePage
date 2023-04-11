@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { Link } from 'react-router-dom'
 import Owner from '../../asset/pipOwner.png'
 import phone from '../../asset/pipPhone.png'
 import Email from '../../asset/pipEmail.png'
@@ -50,7 +49,6 @@ console.log("this is the datas",mydata)
           <img src={Country} alt="img" />
           <div>
             <h3>COUNTRY</h3>
-            {/* <p>mozambique</p> */}
           </div>
         </AccountCountry>
         <AccountPhone>

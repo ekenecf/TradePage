@@ -27,7 +27,6 @@ export default function Eze() {
                 ABOUT COMPANY
               </NavLink>
                 </p>
-             {/*  <p>OUR NEWS</p> */}
               <p>
               <NavLink to={`/get_started`} style={{textDecoration:"none", color:"lightgray"}}>
                 GET STARTED
@@ -43,7 +42,6 @@ export default function Eze() {
                 FAQ
               </NavLink>
               </p>
-              {/* <p>HOWTO</p> */}
               <p>
               <NavLink to={`/questions`} style={{textDecoration:"none", color:"lightgray"}}>
                    CONTACT US
