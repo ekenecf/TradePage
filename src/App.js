@@ -47,11 +47,11 @@ const [display, setDisplay] = useState(true)
           <Route path="/siginup" element={<SignUp Display = {toggle}/>} />
           <Route path="/questions" element={<Question />} />
             <Route path="/get_started" element={<GetStarted />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact Display = {changeToggle}/>} />
             <Route path="/team" element={<Teams />} />
             <Route path="/forgotpassword" element={<ForgotPassword  Display = {toggle} />} />
             <Route path="/restLink/:userid/:tokenid" element={<RestPassword Display = {toggle} />} />
-          <Route element={<Private />}>
+          {/* <Route element={<Private />}> */}
             <Route exact path="/dashboard/:userid" element={<Dashboard Display = {toggle}/>} />
             <Route path="/edit/:userid" element={<EditProfile />} />
             <Route path="/about-company/:userid" element={<AboutCompany />} />
@@ -65,7 +65,7 @@ const [display, setDisplay] = useState(true)
             <Route path="/contactus/:userid" element={<DashboardContactUs Display = {toggle} />} />
             <Route path="/privacypolicy/:userid" element={<DashboardPrivacy Display = {toggle}/>} />
             <Route path="/update/:userid" element={<Update Display = {toggle}/>} />
-          </Route>
+          {/* </Route> */}
         </Routes>
       </HashRouter>
   );

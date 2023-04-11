@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import "../Steps/GetStarted.css";
 import { IoLocationOutline } from "react-icons/io5";
@@ -7,7 +7,13 @@ import { BsHeadset } from "react-icons/bs";
 import Footer from "../LandingPage/Footer/Footer"
 
 
-const Contact = () => {
+const Contact = ({Display}) => {
+  console.log(Display)
+  useEffect(()=>{
+    /* eslint-disable-next-line no-unused-expressions */
+    return Display
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
+  },[])
   return (
     <div>
       <section className="contact">
@@ -23,7 +29,7 @@ const Contact = () => {
           <h4>Support Form</h4>
           <p className="support_form_parag">
             <IoLocationOutline />
-            &nbsp;&nbsp; Address: 813 Meadowbrook Drive Coppell,TX 75019
+            &nbsp;&nbsp; Address: 613 Meadowbrook Drive Coppell,TX 75029
             <br />
             <BsEnvelope />
             <br />
@@ -55,7 +61,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <input type="submit" value="Send message" class="sbmt" />
+            <input type="submit" value="Send message" className="sbmt" />
           </form>
           <div></div>
         </section>

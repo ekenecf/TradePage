@@ -2,8 +2,8 @@
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import {Link } from 'react-router-dom'
-import bg from '../asset/bitcoinwallpaper.jpg'
-import logo from '../asset/preeminentcryptotrade.png'
+import bg from '../asset/test-removebg-preview.png'
+import logo from '../asset/elite-gain.png'
 import { useNavigate } from "react-router-dom"
 import Axios from "axios"
 import { SpinnerCircular } from 'spinners-react';
@@ -23,8 +23,6 @@ function SignUp({Display}) {
   const [loading, setLoading] = useState(false)
 
   console.log(message)
- /*  const [old, setOld] = useState(false)
-  const [conditions, setconditions] = useState(false) */
 
    useEffect(()=>{
     /* eslint-disable-next-line no-unused-expressions */
@@ -82,12 +80,12 @@ function SignUp({Display}) {
             </Link>
           </LogoDiv>
           <Welcome>
-              <WelText>Welcome to <span>Preeminentcryptotrade</span> </WelText>
+              <WelText>Welcome to <span>ELITE-GAIN</span> </WelText>
               <Parg>Our goal here is to provide investors with a platform that is trustworthy, 
                 reliable and efficient.</Parg>
             </Welcome>
             <FirstFooter>
-              <FirstFooterText1>© 2020 preeminentcryptotrade.com ! </FirstFooterText1>
+              <FirstFooterText1>© 2020 ELITE-GAIN! </FirstFooterText1>
               <FirstFooterText2>
                 {/* <span>Terms & Conditions</span> */}
                 <span><Link to="/contact" style={{color: "gray"}}>Contact</Link></span>
@@ -221,7 +219,7 @@ const FirstFooter = styled.div`
 const Parg = styled.p`
   width:  85%;
   margin-top: 20px;
-  color: lightgray;
+  color: #000;
 
   @media (max-width: 768px) {
     font-size: 15px;
@@ -241,10 +239,11 @@ const WelText = styled.div`
 `
 const Welcome = styled.div`
   margin-left: 5%;
-  height: max-content
+  height: max-content;
+  margin-top: 75%;
 `
 const LogoImg = styled.img`
-  width: 100%;
+  width: 60%;
 `
 const LogoDiv = styled.div`
   width: 70%;
@@ -265,9 +264,9 @@ const MainContainer = styled.div`
 const FirstContainer = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: left;
-  width: 44%;
+  width: 41%;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
@@ -404,7 +403,7 @@ const PhoneNumber = styled.input`
 `
 
 const SelectCountry = styled.select`
-  width: 60%;
+  width: 57%;
   height: 7vh;
   border: 0;
   border-radius: 5px;

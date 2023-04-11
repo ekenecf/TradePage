@@ -303,6 +303,7 @@ display: inline-block;
     @media Screen and (max-width: 425px){
         width: 100%;
         align-items: center;
+        margin-top: 5%;
     }
 
 `;

@@ -1,6 +1,6 @@
-# TRADE-PAGE-FRONT-END
+# ELITE-GAIN-FRONT-END
 
-The front-end section of the **Trade-Page** is built with React, Redux and styled-components.
+The front-end section of the **ELITE-GAIN** is built with React, Redux and styled-components.
 
 ## Built with
 
@@ -16,7 +16,6 @@ The front-end section of the **Trade-Page** is built with React, Redux and style
 
 <img src="public/snip.png"/>
 
-You can get the API's repository via [this link](https://github.com/Lembani/hotel-reservation-backend.git)
 The API repository is not available for now due to security reasons
 
 ## Deployment

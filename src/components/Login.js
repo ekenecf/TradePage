@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import bg from '../asset/bitcoinwallpaper.jpg'
-import logo from '../asset/preeminentcryptotrade.png'
+import bg from '../asset/test-removebg-preview.png'
+import logo from '../asset/elite-gain.png'
 import { useNavigate } from "react-router-dom"
 import Axios from "axios"
 import { SpinnerCircular } from 'spinners-react';
@@ -80,7 +80,7 @@ const Login = ({ Display }) => {
         </LogoDiv>
         <Welcome>
           <WelText>
-            Welcome to <span>Preeminentcryptotrade</span>{' '}
+            Welcome to <span>ELITE-GAIN</span>{' '}
           </WelText>
           <Parg>
             Our goal here is to provide investors with a platform that is
@@ -89,7 +89,7 @@ const Login = ({ Display }) => {
         </Welcome>
         <FirstFooter>
           <FirstFooterText1>
-            © 2020 preeminentcryptotrade.com !{' '}
+            © 2020 ELITE-GAIN!{' '}
           </FirstFooterText1>
           <FirstFooterText2>
             {/* <span>Terms & Conditions</span> */}
@@ -167,7 +167,7 @@ const FirstFooterText2 = styled.div`
   }
 `
 const FirstFooterText1 = styled.div`
-  color: lightgray;
+  color: #000;
   font-size: 15px;
 
   @media (max-width: 768px) {
@@ -182,11 +182,16 @@ const FirstFooter = styled.div`
   display: flex;
   width: 90%;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 `
 const Parg = styled.p`
   width: 85%;
   margin-top: 20px;
-  color: lightgray;
+  color: #000;
 
   @media (max-width: 768px) {
     font-size: 15px;
@@ -207,15 +212,22 @@ const WelText = styled.div`
 const Welcome = styled.div`
   margin-left: 5%;
   height: max-content;
+  margin-top: 45%;
+
 `
 const LogoImg = styled.img`
-  width: 100%;
+  width: 45%;
 `
 const LogoDiv = styled.div`
   width: 70%;
   height: max-content;
   margin-top: 5%;
   margin-left: 5%;
+
+  @media (max-width: 768px) {
+    /* width: 50%; */
+
+  }
 `
 
 const MainContainer = styled.div`
@@ -232,7 +244,7 @@ const MainContainer = styled.div`
 const FirstContainer = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: left;
   width: 44%;
   height: 100vh;
@@ -242,10 +254,11 @@ const FirstContainer = styled.div`
   justify-content: space-between;
 
   @media (max-width: 768px) {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     flex-wrap: nowrap;
-    flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
   }
 `
 
@@ -255,7 +268,7 @@ const SecondContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   @media (max-width: 768px) {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
   }
 `
@@ -276,6 +289,7 @@ const FirstParagraph = styled.p`
   }
   @media (max-width: 768px) {
     margin-bottom: 15%;
+    text-align: center;
   }
 `
 

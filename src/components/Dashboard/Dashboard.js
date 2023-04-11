@@ -28,7 +28,7 @@ useEffect(()=>{
   },[])
   return (
     <div>
-       {data ?  
+       {!data ? 
        <div>
         <TopHeader/>
         <BitconScr/>
