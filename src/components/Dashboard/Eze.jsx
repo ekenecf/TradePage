@@ -19,10 +19,7 @@ export default function Eze() {
         <div className='footet_wrap'>
           <div className='footerNav_contain'>
             <div className='button'>
-              {/* <button className='button1'>Privacy Policy</button>
-              <button className='button2'>Anti-Spam Policy</button>
-              <button className='button3'>Rules</button> */}
-              <p>@2020 Preeminentcryptotrade.com All Rights Reserved.</p>
+              <p>@2020 ELITE-GAIN All Rights Reserved.</p>
             </div>
             <div className='footer_nav'>
               <p>
@@ -55,10 +52,10 @@ export default function Eze() {
             </div>
           </div>
           <div className='footer_buttom'>
-            <div className='footer_icons'><ImBriefcase className='icon' /> <p> preeminentcryptotrade</p></div>
-            <div className='footer_icons'><MdLocationOn className='icon' /> <p> Adress:813Meadowbrook Drive Coppell,TX 75019</p></div>
+            <div className='footer_icons'><ImBriefcase className='icon' /> <p>ELITE-GAIN</p></div>
+            <div className='footer_icons'><MdLocationOn className='icon' /> <p>Address: 613 Meadowbrook Drive Coppell,TX 75029</p></div>
             <div className='footer_icons'><ImPhone className='icon' /> <p> Phone:VIP members only</p></div>
-            <div className='footer_icons'> <TfiEmail className='icon' /><p> Email: preeminentteam@gmail.com</p></div>
+            <div className='footer_icons'> <TfiEmail className='icon' /><p> Email: elitegain@gmail.com</p></div>
           </div>
         </div>
 

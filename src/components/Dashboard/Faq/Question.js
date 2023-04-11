@@ -8,7 +8,7 @@ function Question() {
     {
       id: uuidv4(),
       question: 
-      "Q: What is the main idea behind the establishment of Preeminentcryptotrade.com? Is the company for ‘real’? And is there anything that really proves this?",
+      "Q: What is the main idea behind the establishment of ELITE-GAIN? Is the company for ‘real’? And is there anything that really proves this?",
       answer:
       "A: Preeminentcryptotrade.com is a cryptocurrency trading company established in 2022. The wide array of services we offer were specifically designed to assist Bitcoin holders in making good trading decisions. We are a London-based company that possesses a group of trading professionals covering many industries, ranging from engineering to advanced computer technology. Our group of professionals are widely versed in cryptocurrency techniques as well and can expertly answer any question you might have concerning cryptocurrency trading.",
       open: true,

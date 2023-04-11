@@ -184,7 +184,7 @@ const HeaderMenu = () => {
             LOGOUT
           </NavLink>
           </MyMenu>
-            {mydata.isAdmin? 
+            {!mydata.isAdmin ?
              <MyMenu>
              <NavLink to={`/update/${userid}`} state={{ update: 'update' }}>
                UPDATE

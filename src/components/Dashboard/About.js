@@ -7,18 +7,18 @@ function About() {
       <Detail>
         <h2>About The Company</h2>
         <p>
-          Welcome to Preeminentcryptotrade Inc. We are a main organization that emphasis on
+          Welcome to ELITE-GAIN Inc. We are an organization that emphasis on
           Forex market and Cryptographic money parts. We will probably
           accomplish the most astounding profit from the movement for the
           outside cash trade (Forex) and Digital money trade markets. On the off
           chance that you might want to enter the universe of online Forex
           exchanging and Digital currency exchanging with present day Cloud
           Mining stage then you are on your correct way. Ventures with
-          Preeminentcryptotrade - Power Of Experience are moderate and safe.
+          ELITE-GAIN - Power Of Experience are moderate and safe.
         </p>{' '}
         <br />
         <p>
-           Preeminentcryptotrade has been doing business since 2015 and accomplished
+           ELITE-GAIN has been doing business since 2015 and accomplished
           brilliant outcomes. The experience and aptitudes of our brokers and
           budgetary specialists is the way to the achievement of the speculation
           finance. All through our professions, every one of us has drilled
