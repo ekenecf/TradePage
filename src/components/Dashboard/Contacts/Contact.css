@@ -1,0 +1,128 @@
+.contacts {
+  background-image: linear-gradient(28deg, rgb(18, 72, 189), #1e3cb1);
+  padding: 10% 0 6% 5%;
+}
+
+.contact > h5 {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 11px;
+  color: #54d8a3;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.contact_h1 {
+  color: #fff;
+  margin-bottom: 6%;
+  font-weight: 300;
+}
+
+.map {
+  background: #eee;
+  height: 30vh;
+  width: 100%;
+}
+
+.support_form {
+  text-align: center;
+}
+
+.support_form > h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(51, 78, 153);
+  padding-bottom: 6%;
+  padding-top: 10%;
+}
+
+.support_form > p {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(51, 78, 153);
+}
+
+.support_form > hr {
+  font-size: 1px;
+  color: rgb(255, 255, 255);
+  margin: 3% 33px 0 33px;
+}
+
+.form-control {
+  padding: 4%;
+  width: 42%;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  margin: 7px;
+}
+
+.textarea {
+  width: 90%;
+  min-height: 160px;
+}
+
+::placeholder {
+  color: rgb(180, 173, 173);
+  font-weight: 300;
+}
+
+.sbmts {
+  background: linear-gradient(
+    135deg,
+    rgb(36, 39, 214) 0,
+    rgb(47, 12, 161) 100%
+  );
+  color: #fff !important;
+  height: 40px;
+  margin-bottom: 10%;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  border: 0;
+  margin-top: 32px;
+}
+
+.faq_h3 {
+  color: #857fe9;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 23px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+.flex-cont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  padding-left: 5%;
+}
+
+.support_form {
+  width: 50%;
+  text-align: start;
+}
+
+.support_form > hr {
+  margin: 2% 0 10% 0;
+}
+
+.support_form > h4 {
+  padding-top: 0;
+}
+
+.map {
+  height: 90vh;
+  width: 50%;
+}
+}

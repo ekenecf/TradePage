@@ -1,0 +1,300 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f8f8f8; */
+  margin: 2% 0px;
+}
+
+.footer_image img {
+  width: 80%;
+}
+
+
+.footer_cont {
+  width: 100%;
+  display: flex;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(13, 13, 121);
+  color: #f8f8f8;
+  padding-top: 2%;
+}
+
+.footet_wrap {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.footerNav_contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_nav {
+  display: flex;
+  gap: 10px;
+  font-size: 90%;
+  color: #c9c8c8;
+}
+
+.button {
+  width: 30%;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.button p{
+margin-top: 5px 0;
+}
+
+.button1 {
+  width: 35%;
+  height: 40px;
+  border-radius: 30px;
+  border-color: transparent;
+  background-color: #FFA903;
+  font-size: 90%;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.button2 {
+  width: 35%;
+  height: 40px;
+  border-radius: 30px;
+  border-color: transparent;
+  background-color: #FFA903;
+  font-size: 90%;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.button3 {
+  width: 25%;
+  height: 40px;
+  border-radius: 30px;
+  border-color: transparent;
+  background-color: #FFA903;
+  font-size: 90%;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.footer_buttom {
+  width: 89%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  border-top: 1px solid #f8f8f8;
+}
+
+.footer_icons {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  /* font-size: 12px; */
+}
+.icon{
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
+@media screen and (max-width:768px) {
+  .footer {
+    width: 100%;
+  }
+  .footer_image img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .footer_image {
+    width: 88%;
+    height: 50px;
+  }
+
+  .footet_wrap {
+    width: 95%;
+  }
+
+  .footerNav_contain {
+    font-size: 10px;
+  }
+
+  .button {
+    width: 40%;
+    margin-bottom: 5px;
+  }
+
+  .button1 {
+    width: 33%;
+    height: 35px;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+
+  .button2 {
+    width: 35%;
+    height: 35px;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+
+  .button3 {
+    width: 20%;
+    height: 35px;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  .footer_buttom{
+    width: 100%;
+    font-size: 10px;
+  }
+  .icon{
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .footer_image img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .footer_image {
+    width: 90%;
+    height: 40px;
+  }
+
+  .footet_wrap {
+    width:98%;
+  }
+
+  .footerNav_contain {
+    font-size: 10px;
+  }
+
+  .button {
+    width: 45%;
+    margin-bottom: 5px;
+  }
+
+  .button1 {
+    width: 50px;
+    height: 25px;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+
+  .button2 {
+    width: 50px;
+    height: 25px;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+
+  .button3 {
+    width: 40px;
+    height: 25px;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+  .footer_nav {
+  width: 70%;
+  }
+  .footerNav_contain {
+    font-size: 5.5px;
+  }
+  .footer_buttom{
+    width: 100%;
+    font-size: 5px;
+  }
+  .icon{
+    font-size:15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer_image img {
+    width: 100%;
+    height: 30%;
+  }
+
+  .footer_image {
+    width: 90%;
+    height: 40px;
+  }
+
+  .footet_wrap {
+    width:98%;
+  }
+
+  .footerNav_contain {
+    font-size: 10px;
+  }
+
+  .button {
+    width: 40%;
+    margin-bottom: 5px;
+  }
+
+  .button1 {
+    width: 35px;
+    height: 15px;
+    font-size: 4px;
+    margin-right: 5px;
+    font-weight: 700;
+  }
+
+  .button2 {
+    width: 40px;
+    height: 15px;
+    font-size: 4px;
+    margin-right: 5px;
+    font-weight: 700;
+  }
+
+  .button3 {
+    width: 25px;
+    height: 15px;
+    font-size: 4px;
+    margin-right: 5px;
+    font-weight: 700;
+  }
+  .footer_nav {
+  width: 63%;
+  }
+  .footerNav_contain {
+    font-size: 4px;
+  }
+  .footer_buttom{
+    width: 100%;
+    font-size: 4px;
+  }
+  .icon{
+    font-size:10px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .button {
+    width: 38%;
+    margin-top: 2%;
+  }
+}

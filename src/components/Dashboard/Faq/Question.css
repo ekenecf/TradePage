@@ -1,0 +1,151 @@
+/* .App {
+    font-family: sans-serif;
+    text-align: center;
+  } */
+
+.question-section {
+  background: transparent;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  width: 92vw;
+}
+
+.question-align {
+  align-items: center;
+  display: flex;
+  min-height: 10px;
+  text-align: left;
+}
+
+.question-align h4 {
+  margin-left: 8px;
+}
+
+.question-styling {
+  font-size: 17px;
+  width: 100%;
+}
+
+.question-icon {
+  background: none;
+  border: none;
+  color: #1b6aae;
+  cursor: pointer;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.answer-divider {
+  border-top: 1px solid lightgray;
+}
+
+.answer {
+  margin-left: 8px;
+  margin-right: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+}
+
+.sub-header-faq {
+  /* margin-bottom: 10px; */
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #857ee9;
+  cursor: pointer;
+  /* border-bottom: 1px solid #eee; */
+}
+
+#click-1,
+#click-2,
+#click-3 {
+  padding-inline: 2%;
+}
+
+.flex-faq {
+  padding-inline: 3%;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: baseline;
+  /* margin-inline: 16%; */
+}
+
+.faq_question {
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  position: relative;
+  padding: 16px 0 16px 20px;
+  cursor: pointer;
+  color: #639;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-top: 1px solid #eee;
+}
+
+.flex-faq > section > button {
+  color: #ccdceb;
+  border: none;
+  background: #fff;
+  margin-top: -21%;
+  margin-bottom: 15%;
+}
+
+.quest_arr {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-faq > section > .quest_arr > button {
+  border: none;
+  background: #fff;
+  padding-bottom: 10%;
+  color: #ccdceb;
+}
+
+.ans_arr {
+  font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 16px;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 0;
+    color: rgb(171, 169, 169);
+}
+
+@media (min-width: 768px) {
+  .faq {
+    margin-inline: 16%;
+  }
+
+  .flex-faq > section > button {
+    margin-top: -11%;
+    margin-bottom: 9%;
+  }
+
+  .faq_h1 {
+    margin-bottom: 2%;
+  }
+
+  .faq_hr {
+    margin-bottom: 0;
+  }
+
+  .flex-faq > section > .quest_arr > button {
+    padding-bottom: 5%;
+  }
+}
