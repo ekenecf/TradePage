@@ -10,23 +10,25 @@ import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
 
 function EditForm() {
+
   const { userid } = useParams();
   const [data, setData] = useState()
 /*   const UserData =JSON.parse(localStorage.getItem("User")) */
-  console.log("this is the userid",userid)
+  // console.log("this is the userid",userid)
   
 
 
-  const url = `https://preeminentcryptotrade.onrender.com/api/userdata/${userid}`
+  const url = `https://elitegain.onrender.com/api/userdata/${userid}`
 
   useEffect(()=>{
     Axios.get(url)
     .then(res => setData(res.data.data))
+
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
 },[])
 
 const mydata = {...data}
-console.log("this is the datas",mydata)
+// console.log("this is the datas",mydata)
 
   return (
     <MainContainer>
@@ -35,6 +37,7 @@ console.log("this is the datas",mydata)
           <img src={Owner} alt="img" />
           <div>
             <h3>ACCOUNT</h3>
+            <p>{mydata.plan}</p>
          {/*    <p>BITCOIN INVESTMENT</p> */}
           </div>
         </AccountType>
@@ -49,6 +52,7 @@ console.log("this is the datas",mydata)
           <img src={Country} alt="img" />
           <div>
             <h3>COUNTRY</h3>
+            <p>{mydata.country}</p>
           </div>
         </AccountCountry>
         <AccountPhone>

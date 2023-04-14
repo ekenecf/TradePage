@@ -13,23 +13,11 @@ const Login = ({ Display }) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [loading, setLoading] = useState(false)
+
+    /* eslint-disable-next-line no-unused-vars */
   const [message, setMessage] = useState({ error: false, msg:""});
 
-  /* const alert = () => {
-        if(message.error === false) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: err,
-         }) 
-        }else{
-          alert("good")
-        }
-  }
- */
-  console.log(message)
-
-  const url = "https://preeminentcryptotrade.onrender.com/api/login"
+  const url = "https://elitegain.onrender.com/api/login"
   const Data = {email, password}
 
   const Login = (e) => {
@@ -37,21 +25,14 @@ const Login = ({ Display }) => {
     setLoading(true)
     Axios.post(url,Data)
     .then((res) => {
-      console.log(res)
-      localStorage.setItem("User", JSON.stringify(res.data));
-      console.log(res)
-    }
-    )
-    .then(()=>{
-      setMessage({ error: true, msg: "successfully!" });
-      const id = JSON.parse(localStorage.getItem("User"))
+      localStorage.setItem('User', JSON.stringify(res.data))
+      console.log(res, "res from first then")
       setTimeout(() => {
-        navigate(`/dashboard/${id._id}`) 
-      console.log(id._id)
-      }, [2000]);
+        navigate(`/dashboard/${res.data._id}`)
+      }, [2000])
+      setLoading(false)
     })
     .catch((error)=>{
-      console.log(error)
       setMessage({error: false, msg: error.response.data.message});
     setLoading(false)
     Swal.fire({
@@ -60,7 +41,6 @@ const Login = ({ Display }) => {
       text: error.response.data.message,
    }) 
     console.log(error)
-    //  reset(),
   })
   }
   
@@ -126,16 +106,7 @@ const Login = ({ Display }) => {
 }
 
 export default Login
-/* const Messg = styled.div`
-  width: 56%;
-  margin-bottom: 10px;
-  font-size: 13px;
-  color: red;
 
-  @media (max-width: 768px) {
-      width: 87%
-    }
-` */
 const FirstFooterText2 = styled.div`
   display: flex;
   margin-right: auto;

@@ -10,9 +10,9 @@ function WithdrawalMethod() {
   const { userid } = useParams();
   const [data, setData] = useState()
   /* const UserData =JSON.parse(localStorage.getItem("User")) */
-  console.log("this is the data",data)
+  // console.log("this is the data",data)
 
-  const url = `https://preeminentcryptotrade.onrender.com/api/userdata/${userid}`
+  const url = `https://elitegain.onrender.com/api/userdata/${userid}`
 
   useEffect(()=>{
     Axios.get(url)

@@ -18,11 +18,11 @@ function AccountDetail() {
   const { userid } = useParams();
   const [data, setData] = useState()
 /*   const UserData =JSON.parse(localStorage.getItem("User")) */
-  console.log("this is the userid",userid)
+  // console.log("this is the userid",userid)
   
 
 
-  const url = `https://preeminentcryptotrade.onrender.com/api/userdata/${userid}`
+  const url = `https://elitegain.onrender.com/api/userdata/${userid}`
 
   useEffect(()=>{
     Axios.get(url)
@@ -31,7 +31,7 @@ function AccountDetail() {
 },[])
 
 const mydata = {...data}
-console.log("this is the datas",mydata)
+// console.log("this is the data",mydata)
 
   const location = useLocation()
   const { edit } = location.state || {}
@@ -46,6 +46,7 @@ console.log("this is the datas",mydata)
           <img src={Owner} alt="img" />
           <div>
             <h3>ACCOUNT</h3>
+            <p>{mydata.plan}</p>
           </div>
         </AccountType>
         <AccountEmail>
@@ -59,6 +60,7 @@ console.log("this is the datas",mydata)
           <img src={Country} alt="img" />
           <div>
             <h3>COUNTRY</h3>
+            <p>{mydata.country}</p>
           </div>
         </AccountCountry>
         <AccountPhone>
