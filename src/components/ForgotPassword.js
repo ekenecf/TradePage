@@ -17,7 +17,7 @@ const ForgotPassword = ({ Display }) => {
     console.log(message)
 
 
-  const url = "https://preeminentcryptotrade.onrender.com/api/forgotpassword"
+  const url = "https://elitegain.onrender.com/api/forgotpassword"
   const Data = {email}
 
   const Login = (e) => {
@@ -82,7 +82,7 @@ const ForgotPassword = ({ Display }) => {
         </LogoDiv>
         <Welcome>
           <WelText>
-            Welcome to <span>Preeminentcryptotrade</span>{' '}
+            Welcome to <span>ELITEGAIN</span>{' '}
           </WelText>
           <Parg>
             Our goal here is to provide investors with a platform that is
@@ -91,7 +91,7 @@ const ForgotPassword = ({ Display }) => {
         </Welcome>
         <FirstFooter>
           <FirstFooterText1>
-            © 2020 preeminentcryptotrade.com !{' '}
+            © 2020 ELITEGAIN!{' '}
           </FirstFooterText1>
           <FirstFooterText2>
             {/* <span>Terms & Conditions</span> */}

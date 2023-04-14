@@ -1,25 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
+import Axios from 'axios';
+import Swal from 'sweetalert2'
+import { SpinnerCircular } from 'spinners-react';
 
 
 function RequestDetails() {
+
+  const { userid } = useParams();
+
+  const [email, setEmail] = useState("")
+  const [firstName, setFirstname] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [depositMethod, setDepositmethod] = useState("")
+  const [phoneNumber, setPhonenumber] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const url = `https://elitegain.onrender.com/api/requestaccount/${userid}`
+  const Data = {email, firstName, lastName, depositMethod, phoneNumber}
+
+  const requestDeposit = (e) => {
+    e.preventDefault()
+    
+    console.log(Data)
+    setLoading(true)
+    Axios.post(url,Data)
+    .then((res) => {
+      console.log(res, "res from first then")
+      Swal.fire({
+        icon: 'success',
+        title: 'Success😍...',
+        text: res.data.message,
+     }) 
+      setLoading(false)
+    })
+    .catch((error)=>{
+    setLoading(false)
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: error.response.data.message,
+   }) 
+    console.log(error)
+  })
+  }
+
   return (
     <MainContainer>
       <FirstContainer>
         
       </FirstContainer> 
       <SecondContainer>
-        <FormInput>
+        <FormInput onSubmit={(e) => requestDeposit(e)}>
           <label>Your First Name</label>
-          <FirstNameInput type="text"  placeholder='first name'/>
+          <FirstNameInput type="text"  placeholder='first name' onChange={(e) => setFirstname(e.target.value)}/>
           <label>Your Last Name</label>
-          <LastNameInput type="text" placeholder='Last name' />
+          <LastNameInput type="text" placeholder='Last name' onChange={(e) => setLastName(e.target.value)}/>
           <label>Your Email Address</label>
-          <EmailInput type="email" placeholder='Email address' />
+          <EmailInput type="email" placeholder='Email address' onChange ={(e)=> setEmail(e.target.value)}/>
           <label>Your Phone Number</label>
-          <PhoneNumber type="text" placeholder='Phone number' />
+          <PhoneNumber type="text" placeholder='Phone number' onChange={(e) => setPhonenumber(e.target.value)}/>
           <label>Payment Method</label>
-          <SelectGender>
+          <SelectGender onChange={(e) => setDepositmethod(e.target.value)}>
             <option>-Payment Method-</option>
             <option value="PAYPAL">PAYPAL</option>
             <option value="WESTERN UNION">WESTERN UNION</option>
@@ -27,7 +70,7 @@ function RequestDetails() {
             <option value="RIA MONEY TRANSFER">RIA MONEY TRANSFER</option>
           </SelectGender>
           <ButtonContainer>
-            <button type="submit">MAKE REQUEST</button>
+            <button type="submit">{loading ? <SpinnerCircular /> : "Make Request"}</button>
           </ButtonContainer>
         </FormInput>
       </SecondContainer>

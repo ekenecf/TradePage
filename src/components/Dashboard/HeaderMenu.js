@@ -118,6 +118,7 @@ const DashBoardText = styled.h2`
 `
 
 const HeaderMenu = () => {
+  
   const location = useLocation()
   const { edit } = location.state || {}
   const { about } = location.state || {}
@@ -130,12 +131,8 @@ const HeaderMenu = () => {
 
   const { userid } = useParams();
   const [data, setData] = useState()
-  /*   const UserData =JSON.parse(localStorage.getItem("User")) */
-  /*   console.log("this is the userid",userid) */
-    
   
-  
-    const url = `https://preeminentcryptotrade.onrender.com/api/userdata/${userid}`
+    const url = `https://elitegain.onrender.com/api/userdata/${userid}`
   
     useEffect(()=>{
       Axios.get(url)
@@ -144,10 +141,7 @@ const HeaderMenu = () => {
   },[])
   
   const mydata = {...data}
-  /* console.log("this is the datas i what to use",mydata) */
-/*   const id = JSON.parse(localStorage.getItem("User") )
-  console.log("this is",id.data._id)
- */
+
   return (
     <MainContainer>
       <Wrapper>
@@ -184,7 +178,7 @@ const HeaderMenu = () => {
             LOGOUT
           </NavLink>
           </MyMenu>
-            {!mydata.isAdmin ?
+            {mydata.isAdmin ?
              <MyMenu>
              <NavLink to={`/update/${userid}`} state={{ update: 'update' }}>
                UPDATE

@@ -14,9 +14,9 @@ function DepositMethod() {
   const { userid } = useParams();
   const [data, setData] = useState()
   /* const UserData =JSON.parse(localStorage.getItem("User")) */
-  console.log("this is the data",data)
+  // console.log("this is the data",data)
 
-  const url = `https://preeminentcryptotrade.onrender.com/api/userdata/${userid}`
+  const url = `https://elitegain.onrender.com/api/userdata/${userid}`
 
   useEffect(()=>{
     Axios.get(url)
@@ -31,22 +31,22 @@ console.log("this is the datas",mydata)
     <DepositMethodContainer>
       <DepositMethodHeading>Select A Deposit Method</DepositMethodHeading>
       <PaymentMethods>
-        <NavLink to="/bitcoin-deposit">
+        <NavLink to={`/bitcoin-deposit/${mydata._id}`} state={{ withdraw: mydata._id }}>
           <img src={bitcoin} alt="bitcoinImage" />
         </NavLink>
-        <NavLink to="/request-form">
+        <NavLink to={`/request-form/${mydata._id}`}>
           <img className="moneyG" src={moneyGram} alt="moneyGramImage" />
         </NavLink>
-        <NavLink to="/request-form">
+        <NavLink to={`/request-form/${mydata._id}`}>
           <img src={payPal} alt="payPalImage" />
         </NavLink>
-        <NavLink to="/request-form">
+        <NavLink to={`/request-form/${mydata._id}`}>
           <img className="ria" src={ria} alt="riaImage" />
         </NavLink>
-        <NavLink to="/request-form">
+        <NavLink to={`/request-form/${mydata._id}`}>
           <img src={visa} alt="visaImage" />
         </NavLink>
-        <NavLink to="/request-form">
+        <NavLink to={`/request-form/${mydata._id}`}>
           <img src={western} alt="westernImage" />
         </NavLink>
       </PaymentMethods>
@@ -82,6 +82,7 @@ const DepositMethodHeading = styled.h2`
   text-align: center;
   color: #2b4d6f;
   font-size: 30px;
+  margin-top: 2%;
 `
 
 const PaymentMethods = styled.div`

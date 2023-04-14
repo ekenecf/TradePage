@@ -11,11 +11,9 @@ import { SpinnerDotted } from 'spinners-react';
 const Dashboard = ({Display}) => {
   const { userid } = useParams();
   const [data, setData] = useState()
-  const url = `https://preeminentcryptotrade.onrender.com/api/userdata/${userid}`
- /*  console.log(data) */
+  const url = `https://elitegain.onrender.com/api/userdata/${userid}`
 
 useEffect(()=>{
-
     Axios.get(url)
     .then(res => setData(res.data.data))
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
@@ -26,9 +24,12 @@ useEffect(()=>{
     return Display
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
   },[])
+
+  // console.log(data)
+
   return (
     <div>
-       {!data ? 
+       {data ?
        <div>
         <TopHeader/>
         <BitconScr/>

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
-import bitcoinWalletImage from "../../asset/bitCoin-wallet.jpg";
+import bitcoinWalletImage from "../../asset/bitcoinAddress.jpg";
 
 const BitcoinWallet = () => {
 
   const [state, setState] = useState({
-    value: "bc1qcxum393n73ywftqnm77kjg7kc0qtav5s9fay5a",
+    value: "1AruLTG2MThUV5XGBJGfnrejv3iYcKLjkv",
     copied: false,
   });
+
   return (
     <WalletContainer>
       <WalletImage>
@@ -19,10 +19,10 @@ const BitcoinWallet = () => {
         <h2>Deposit Bitcoin To This Wallet Address</h2>
         <p>
           Scan the QR code or click on 'copy text' to copy the address below
-          into your wallet to deposit Bitcoin into your account
+          into your wallet to make deposit.
         </p>
         <InputButton>
-          <input value={state.value} />
+          <input defaultValue={state.value} readOnly/>
           <CopyToClipboard
             text={state.value}
             onCopy={() => setState({ copied: true })}
@@ -48,7 +48,6 @@ const WalletContainer = styled.section`
     flex-direction: column;
     height: max-content;
     margin: 3% 5% 0 5%;
-
   }
 `;
 
