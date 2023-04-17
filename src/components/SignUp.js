@@ -177,7 +177,7 @@ function SignUp({ Display }) {
                  }}
           >
             <option >-Select Package Plan-</option>
-            <option value={"STARTER PLAN($1000-$5,000)"}>STARTER PLAN($1000-$5,000)</option>
+            <option value={"STARTER PLAN($1000-$5,000)"}>STARTER PLAN($500-$5,000)</option>
             <option value={"SILVER PLAN($11,000-$50,000)"}>SILVER PLAN($11,000-$50,000)</option>
             <option value={"GOLD PLAN($51000-$100,000)"}>GOLD PLAN($51000-$100,000)</option>
             <option value={"DIAMOND PLAN($101,000-$1,000,000)"}>DIAMOND PLAN($101,000-$1,000,000)</option>

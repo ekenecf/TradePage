@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import bg from '../asset/bitcoinwallpaper.jpg'
-import logo from '../asset/preeminentcryptotrade.png'
+import logo from '../asset/elite-gain.png'
 import { useNavigate } from "react-router-dom"
 import Axios from "axios"
 import { SpinnerCircular } from 'spinners-react';
@@ -27,10 +27,10 @@ const ForgotPassword = ({ Display }) => {
     Axios.post(url,Data)
     .then((res)=>{
       console.log(res)
-      setMessage({ error: true, msg: "successfully!" });
+      setMessage({ error: false, msg: "successfull!" });
       Swal.fire({
         icon: 'success',
-        title: 'successfully',
+        title: 'successfull',
         text: res.data.message,
      }) 
      setLoading(false)
@@ -109,17 +109,9 @@ const ForgotPassword = ({ Display }) => {
         <Header2>Forgot Password</Header2>
         <FormInput  onSubmit={(e)=> Login(e)}>
           <EmailInput type="email" required placeholder="Email Address"  value={email} onChange ={(e)=>{setEmail(e.target.value)}}/>
-          {/* <Password type="password" placeholder="Input Password"  value={password} onChange ={(e)=>{setPassword(e.target.value)}}/> */}
-          {/* <Messg>{message.msg}</Messg> */}
-          {/* <CheckBoxContainer>
-            <CheckBox type="checkbox" />
-            <p>Keep me Logged in</p>
-          </CheckBoxContainer> */}
-
           <ButtonContainer>
             <button type="submit">
               {loading ? <SpinnerCircular size={25} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> : "Submit"} </button>
-            {/* <Link to="">Forgot password?</Link> */}
           </ButtonContainer>
         </FormInput>
       </SecondContainer>

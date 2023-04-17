@@ -13,10 +13,6 @@ function EditForm() {
 
   const { userid } = useParams();
   const [data, setData] = useState()
-/*   const UserData =JSON.parse(localStorage.getItem("User")) */
-  // console.log("this is the userid",userid)
-  
-
 
   const url = `https://elitegain.onrender.com/api/userdata/${userid}`
 
@@ -28,7 +24,6 @@ function EditForm() {
 },[])
 
 const mydata = {...data}
-// console.log("this is the datas",mydata)
 
   return (
     <MainContainer>

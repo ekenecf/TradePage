@@ -40,7 +40,7 @@ const Component3 = () => {
               alley’, then send your personal details; full name, phone number,
               username, country, city, email and messenger ID to{" "}
               <a style={{ textDecoration: "none" }} href="/about">
-                preeminentteam@gmail.com
+                elitegainteam@gmail.com
               </a>
               , and we will respond within 24 business hours. You don’t need to
               have an active deposit to be a Regional Representative
