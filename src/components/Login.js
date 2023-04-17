@@ -72,7 +72,6 @@ const Login = ({ Display }) => {
             © 2020 ELITE-GAIN!{' '}
           </FirstFooterText1>
           <FirstFooterText2>
-            {/* <span>Terms & Conditions</span> */}
             <span><Link to="/contact" style={{color: "gray"}}>Contact</Link></span>
           </FirstFooterText2>
         </FirstFooter>
@@ -88,7 +87,6 @@ const Login = ({ Display }) => {
         <FormInput  onSubmit={(e)=> Login(e)}>
           <EmailInput type="email" placeholder="Email Address"  value={email} onChange ={(e)=>{setEmail(e.target.value)}}/>
           <Password type="password" placeholder="Input Password"  value={password} onChange ={(e)=>{setPassword(e.target.value)}}/>
-          {/* <Messg>{message.msg}</Messg> */}
           <CheckBoxContainer>
             <CheckBox type="checkbox" />
             <p>Keep me Logged in</p>

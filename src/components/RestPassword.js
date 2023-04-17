@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import bg from '../asset/bitcoinwallpaper.jpg'
-import logo from '../asset/preeminentcryptotrade.png'
+import logo from '../asset/elite-gain.png'
 import { useNavigate } from "react-router-dom"
 import Axios from "axios"
 import { SpinnerCircular } from 'spinners-react';
@@ -19,7 +19,7 @@ const RestPassword = ({Display}) => {
     const [message, setMessage] = useState({ error: false, msg:""});
     console.log(message)
 
-  const url = `https://preeminentcryptotrade.onrender.com/api/restLink/${userid}/${tokenid}`
+  const url = `https://elitegain.onrender.com/api/restLink/${userid}/${tokenid}`
   const Data = {password}
 
   const Login = (e) => {
@@ -40,7 +40,7 @@ const RestPassword = ({Display}) => {
           Swal.fire({
             icon: 'success',
             title: 'successfully',
-            text: "you have successfuly change your passwo",
+            text: "you have successfuly changed your passwoord",
          }) 
           setTimeout(() => {
             navigate(`/login`) 
@@ -65,6 +65,7 @@ const RestPassword = ({Display}) => {
     return Display
     /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [])
+
   return (
     <MainContainer>
       <FirstContainer>
@@ -75,7 +76,7 @@ const RestPassword = ({Display}) => {
         </LogoDiv>
         <Welcome>
           <WelText>
-            Welcome to <span>Preeminentcryptotrade</span>{' '}
+            Welcome to <span>ELITEGAIN</span>{' '}
           </WelText>
           <Parg>
             Our goal here is to provide investors with a platform that is
@@ -84,7 +85,7 @@ const RestPassword = ({Display}) => {
         </Welcome>
         <FirstFooter>
           <FirstFooterText1>
-            © 2020 preeminentcryptotrade.com !{' '}
+            © 2023 elitegain!{' '}
           </FirstFooterText1>
           <FirstFooterText2>
             {/* <span>Terms & Conditions</span> */}
