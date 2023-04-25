@@ -44,7 +44,7 @@ const Hero6 = () => {
             </Box>
             <Box href='http://secure.trust-guard.com/'>
             <Img src={trustguard}/>
-              <Text>Trust-Guard qualified     businesse</Text>
+              <Text>Trust-Guard qualified business</Text>
             </Box>
             <Box href='http://www.avgthreatlabs.com/'>
             <Img src={trends}/>

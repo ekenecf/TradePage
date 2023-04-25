@@ -22,8 +22,6 @@ const Contact = ({ Display }) => {
       </section>
 
       <div className="flex-cont">
-        {/*  <section className="map">Map</section> */}
-
         <section className="support_form">
           <h4>Support Form</h4>
           <p className="support_form_parag">

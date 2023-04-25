@@ -303,7 +303,7 @@ export const BottomLeft = styled.div`
 display: inline-block;
     background-image: linear-gradient(72deg, #DADAFA, #E9E8FF);
     width: 66.666666%;
-    height: 60%;
+    height: 68%;
     padding: 24px 32px;
     display: flex;
     flex-direction: column;
