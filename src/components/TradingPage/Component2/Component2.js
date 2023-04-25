@@ -98,15 +98,15 @@ const Component2 = () => {
             <ProfitHold>
               <Left>
                 <Content>Hourly Profit</Content>
-                <Number>{message ? message* 0.002 : "0.002"} </Number>
+                <Number>${message ? message * 0.002 : "0.002"} </Number>
               </Left>
               <Mid>
                 <Content>Daily Profit</Content>
-                <Number>{message ? message* 0.048 : "0.048"} </Number>
+                <Number>${message ? message * 0.048 : "0.048"} </Number>
               </Mid>
               <Right>
                 <Content>Monthly Profit</Content>
-                <Number>{message ? message * 1.248 : "1.248"}</Number>
+                <Number>${message ? message * 1.248 : "1.248"}</Number>
               </Right>
             </ProfitHold>
             <BottomDiv>

@@ -102,19 +102,11 @@ const RestPassword = ({Display}) => {
         </FirstParagraph>
         <Header2>Reset Password</Header2>
         <FormInput  onSubmit={(e)=> Login(e)}>
-{/*           <EmailInput type="email" placeholder="Email Address"  value={email} onChange ={(e)=>{setEmail(e.target.value)}}/> */}
           <Password type="password" placeholder="Enter your new password"  value={password} onChange ={(e)=>{setPassword(e.target.value)}}/>
           <Password type="password" placeholder="Confirm Password"  value={confirmPassword} onChange ={(e)=>{setconfirmPassword(e.target.value)}}/>
-         {/*  <Messg>{message.msg}</Messg> */}
-          {/* <CheckBoxContainer>
-            <CheckBox type="checkbox" />
-            <p>Keep me Logged in</p>
-          </CheckBoxContainer> */}
-
           <ButtonContainer>
             <button type="submit">
               {loading ? <SpinnerCircular size={25} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" /> : "Submit"} </button>
-            {/* <Link to="">Forgot password?</Link> */}
           </ButtonContainer>
         </FormInput>
       </SecondContainer>
@@ -124,16 +116,7 @@ const RestPassword = ({Display}) => {
 
 export default RestPassword
 
-/* const Messg = styled.div`
-  width: 56%;
-  margin-bottom: 10px;
-  font-size: 13px;
-  color: red;
 
-  @media (max-width: 768px) {
-      width: 87%
-    }
-` */
 const FirstFooterText2 = styled.div`
   display: flex;
   margin-right: auto;
@@ -290,20 +273,6 @@ const FormInput = styled.form`
   align-items: center;
 `
 
-/* const EmailInput = styled.input`
-  width: 57%;
-  height: 7vh;
-  border: 0;
-  border-radius: 5px;
-  background: #f9f9fb;
-  outline: none;
-  padding-left: 3%;
-  margin-bottom: 2%;
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-` */
-
 const Password = styled.input`
   width: 57%;
   height: 7vh;
@@ -317,24 +286,6 @@ const Password = styled.input`
     width: 90%;
   }
 `
-
-/* const CheckBox = styled.input`
-  display: flex;
-  align-items: flex-start;
-  margin: 0;
-` */
-
-/* const CheckBoxContainer = styled.div`
-  width: 60%;
-  display: flex;
-  gap: 5%;
-  p {
-    color: gray;
-  }
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-` */
 
 const ButtonContainer = styled.div`
   width: 60%;

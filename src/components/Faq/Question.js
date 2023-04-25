@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import Faq from "./Faq";
-import Footer from "../LandingPage/Footer/Footer"
+import Footer from "../LandingPage/Footer/Footer";
 
 function Question() {
   const [questions, setQuestions] = useState([]);
   const allQuestions = [
     {
       id: uuidv4(),
-      question: 
-      "Q: What is the main idea behind the establishment of ELITE-GAIN? Is the company for ‘real’? And is there anything that really proves this?",
+      question:
+        "Q: What is the main idea behind the establishment of ELITE-GAIN? Is the company for ‘real’? And is there anything that really proves this?",
       answer:
-      "A: ELITE-GAIN is a financial market trading company established in 2022. The wide array of services we offer were specifically designed to assist Bitcoin holders in making good trading decisions. We are a London-based company that possesses a group of trading professionals covering many industries, ranging from engineering to advanced computer technology. Our group of professionals are widely versed in cryptocurrency techniques as well and can expertly answer any question you might have concerning financial market trading.",
+        "A: ELITE-GAIN is a financial market trading company established in 2022. The wide array of services we offer were specifically designed to assist Financial investors in making good trading decisions. We are an American-based company that possesses a group of trading professionals covering many industries, ranging from engineering to advanced computer technology. Our group of professionals are widely versed in Financial trading techniques as well and can expertly answer any question you might have concerning financial market",
       open: true,
     },
     {
       id: uuidv4(),
-      question: "Q: You seem to provide a quite lucrative interest rate for a limited period of time. Where is the funds coming from?",
+      question:
+        "Q: You seem to provide a quite lucrative interest rate for a limited period of time. Where is the funds coming from?",
       answer:
         "A: As a result of the volume of cryptocurrency trading, stocks, and our cutting-edge trading technology, we have the ability to provide an interest rate that’s higher than what’s usually obtainable in the average market. Moreover, the fact that we are always spreading our reach as far as we can globally helps us in reaching new heights. Plus, we have to stick only to concepts that have to do with modern-day infrastructure if we want to maintain our status as one of the best trading platforms.",
       open: false,
@@ -60,7 +61,7 @@ function Question() {
         ))}
       </section>
 
-        <Footer/>
+      <Footer />
     </div>
   );
 }
