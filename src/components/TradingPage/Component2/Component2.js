@@ -37,7 +37,6 @@ const Component2 = () => {
   const [message, setMessage] = useState("");
 
   const handleInput = (event) => {
-    console.log("Fired");
     setMessage(event.target.value);
   };
   console.log(message);
@@ -124,7 +123,7 @@ const Component2 = () => {
                   <Texts>Minimum withdrawal amount is 0.00005 BTC or its dollar($) equivalent</Texts>
                 </Bottom>
               </BottomLeft>
-              <BottomRight to="/siginup">Sign Up Now</BottomRight>
+              <BottomRight to="/signup">Sign Up Now</BottomRight>
             </BottomDiv>
           </CalculatorDiv>
         </Div>

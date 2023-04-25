@@ -61,7 +61,7 @@ const Header = () => {
               <Nav2 to="/contact">Contact</Nav2>
               <Line></Line>
               <NavRight>
-                <CreateAccount2 to="/siginup">Create Account</CreateAccount2>
+                <CreateAccount2 to="/signup">Create Account</CreateAccount2>
                 <Button2 style={{ color: "black" }}>
                   <NavLink to="/login">Log In</NavLink>
                 </Button2>
@@ -91,7 +91,7 @@ const Header = () => {
               <Nav to="/contact">Contact</Nav>
               <Line></Line>
               <NavRight>
-                <CreateAccount to="/siginup">Create Account</CreateAccount>
+                <CreateAccount to="/signup">Create Account</CreateAccount>
                 <Button>
                   <NavLink to="/login">Log In</NavLink>
                 </Button>

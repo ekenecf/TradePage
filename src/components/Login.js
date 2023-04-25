@@ -80,7 +80,7 @@ const Login = ({ Display }) => {
         <FirstParagraph>
           Don't have an account?
           <span>
-            <Link to="/siginup">SignUp</Link>
+            <Link to="/signup">SignUp</Link>
           </span>
         </FirstParagraph>
         <Header2>Login Account</Header2>
