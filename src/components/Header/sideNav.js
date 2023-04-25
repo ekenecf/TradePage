@@ -94,7 +94,7 @@ const SideNav = ({ setNav }) => {
             Contact Us
           </Span>
           <Span2
-            to="/siginup"
+            to="/signup"
             onClick={() => {
               setNav(false);
             }}

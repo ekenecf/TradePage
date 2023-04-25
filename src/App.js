@@ -44,7 +44,7 @@ const [display, setDisplay] = useState(true)
         <Route path="/affiliate" element={<AffiliatePage/>}/>
         <Route path="/trading" element={<TradingPage/>}/>
           <Route path='/login' element={<Login Display = {toggle}/>} />
-          <Route path="/siginup" element={<SignUp Display = {toggle}/>} />
+          <Route path="/signup" element={<SignUp Display = {toggle}/>} />
           <Route path="/questions" element={<Question />} />
             <Route path="/get_started" element={<GetStarted />} />
             <Route path="/contact" element={<Contact Display = {changeToggle}/>} />
