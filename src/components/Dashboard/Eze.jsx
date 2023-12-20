@@ -53,7 +53,7 @@ export default function Eze() {
             <div className='footer_icons'><ImBriefcase className='icon' /> <p>ELITE-GAIN</p></div>
             <div className='footer_icons'><MdLocationOn className='icon' /> <p>Address: 613 Meadowbrook Drive Coppell,TX 75029</p></div>
             <div className='footer_icons'><ImPhone className='icon' /> <p> Phone:VIP members only</p></div>
-            <div className='footer_icons'> <TfiEmail className='icon' /><p> Email: elitegain@gmail.com</p></div>
+            <div className='footer_icons'> <TfiEmail className='icon' /><p> Email: teamelitegain@gmail.com</p></div>
           </div>
         </div>
 
